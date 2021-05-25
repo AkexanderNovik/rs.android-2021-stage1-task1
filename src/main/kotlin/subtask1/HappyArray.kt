@@ -14,12 +14,13 @@ class HappyArray {
             for (i in 1 until indexOfTheLastElement) {
                 if (sadArray[i - 1] + sadArray[i + 1] > sadArray[i])
                     array.add(sadArray[i])
+                var t = array.size
+                if (t > 2 && array[t - 3] + array[t - 1] < array[t - 2]) {
+                    array.removeAt(t - 2)
+                }
             }
-
             array.add(sadArray[indexOfTheLastElement])
-
             array.toIntArray()
-        }else array.toIntArray()
+        } else array.toIntArray()
     }
-
 }

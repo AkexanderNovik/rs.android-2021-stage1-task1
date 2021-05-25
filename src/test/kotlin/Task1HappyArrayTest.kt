@@ -16,21 +16,21 @@ class Task1HappyArrayTest {
     @Test
     fun testTask1Array2() {
         val sadArray = intArrayOf(1, 2, 2, 9, 93, 2, 6, 9, 6, 10)
-        val happyArray = intArrayOf(1, 2, 2, 9, 2, 6, 9, 6, 10)
+        val happyArray = intArrayOf(1, 2, 2, 2, 6, 9, 6, 10)
         assertArrayEquals(happyArray, converter.convertToHappy(sadArray))
     }
 
     @Test
     fun testTask1Array3() {
         val sadArray = intArrayOf(56, 32, 5, 31, 43, 55, 11, 87, 43, 62)
-        val happyArray = intArrayOf(56, 32, 5, 31, 43, 11, 43, 62)
+        val happyArray = intArrayOf(56, 32, 5, 11, 43, 62)
         assertArrayEquals(happyArray, converter.convertToHappy(sadArray))
     }
 
     @Test
     fun testTask1Array4() {
         val sadArray = intArrayOf(1, 2, 2, 9, 93, 2, 6, 8, 6, 12)
-        val happyArray = intArrayOf(1, 2, 2, 9, 2, 6, 8, 6, 12)
+        val happyArray = intArrayOf(1, 2, 2, 2, 6, 8, 6, 12)
         assertArrayEquals(happyArray, converter.convertToHappy(sadArray))
     }
 
